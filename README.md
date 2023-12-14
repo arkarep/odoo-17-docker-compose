@@ -1,13 +1,13 @@
-# Installing Odoo 16.0 with one command (Supports multiple Odoo instances on one server).
+# Installing Odoo 17.0 with one command (Supports multiple Odoo instances on one server).
 
 ## Quick Installation
 
-Install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) yourself, then run the following to set up first Odoo instance @ `localhost:10016` (default master password: `minhng.info`):
+Install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) yourself, then run the following to set up first Odoo instance @ `localhost:10016` (default master password: `admin.admin`):
 
 ``` bash
 curl -s https://raw.githubusercontent.com/minhng92/odoo-16-docker-compose/master/run.sh | sudo bash -s odoo-one 10016 20016
 ```
-and/or run the following to set up another Odoo instance @ `localhost:11016` (default master password: `minhng.info`):
+and/or run the following to set up another Odoo instance @ `localhost:11016` (default master password: `admin.admin`):
 
 ``` bash
 curl -s https://raw.githubusercontent.com/minhng92/odoo-16-docker-compose/master/run.sh | sudo bash -s odoo-two 11016 21016
@@ -32,7 +32,7 @@ Start the container:
 ``` sh
 docker-compose up
 ```
-Then open `localhost:10016` to access Odoo 16.0.
+Then open `localhost:10016` to access Odoo 17.0.
 
 - **If you get any permission issues**, change the folder permission to make sure that the container is able to access the directory:
 
@@ -79,7 +79,7 @@ The **addons/** folder contains custom addons. Just put your custom addons if yo
 
 * To change Odoo configuration, edit file: **etc/odoo.conf**.
 * Log file: **etc/odoo-server.log**
-* Default database password (**admin_passwd**) is `minhng.info`, please change it @ [etc/odoo.conf#L60](/etc/odoo.conf#L60)
+* Default database password (**admin_passwd**) is `admin.admin`, please change it @ [etc/odoo.conf#L60](/etc/odoo.conf#L60)
 
 ## Odoo container management
 
@@ -121,7 +121,7 @@ server {
 
 ## docker-compose.yml
 
-* odoo:16.0
+* odoo:17.0
 * postgres:15
 
 ## Odoo 16.0 screenshots after successful installation.
