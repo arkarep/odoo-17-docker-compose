@@ -4,15 +4,6 @@
 
 Install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) yourself, then run the following to set up first Odoo instance @ `localhost:10016` (default master password: `admin.admin`):
 
-``` bash
-curl -s https://raw.githubusercontent.com/minhng92/odoo-16-docker-compose/master/run.sh | sudo bash -s odoo-one 10016 20016
-```
-and/or run the following to set up another Odoo instance @ `localhost:11016` (default master password: `admin.admin`):
-
-``` bash
-curl -s https://raw.githubusercontent.com/minhng92/odoo-16-docker-compose/master/run.sh | sudo bash -s odoo-two 11016 21016
-```
-
 Some arguments:
 * First argument (**odoo-one**): Odoo deploy folder
 * Second argument (**10016**): Odoo port
@@ -123,13 +114,3 @@ server {
 
 * odoo:17.0
 * postgres:15
-
-## Odoo 16.0 screenshots after successful installation.
-
-<img src="screenshots/odoo-16-welcome-screenshot.png" width="50%">
-
-<img src="screenshots/odoo-16-apps-screenshot.png" width="100%">
-
-<img src="screenshots/odoo-16-sales-screen.png" width="100%">
-
-<img src="screenshots/odoo-16-product-form.png" width="100%">
